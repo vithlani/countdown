@@ -17,14 +17,11 @@ namespace countdown_app
                 for (int round = 1; round <= rounds; round++)
                 {
                     Console.WriteLine($"Round {round}");
+                    string stringInput = GetValidStringInput("Enter a string containing vowels and constants (1-9): ", 1, 9);
 
-                    int vowelCount = GetValidInput("Enter number of vowels (1-5): ", 1, 5);
-                    int consonantCount = GetValidInput("Enter number of consonants (1-5): ", 1, 5);
+                    Console.WriteLine($"Given string: {stringInput}");
 
-                    var letters = game.GenerateLetters(vowelCount, consonantCount);
-                    Console.WriteLine($"Generated letters: {letters}");
-
-                    var longestWord = game.FindLongestWord(letters);
+                    var longestWord = game.FindLongestWord(stringInput);
                     if (string.IsNullOrEmpty(longestWord))
                     {
                         Console.WriteLine("No valid word found in this round.");
@@ -51,18 +48,18 @@ namespace countdown_app
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
         }
-
-        static int GetValidInput(string prompt, int min, int max)
+        static string GetValidStringInput(string prompt, int min, int max)
         {
-            int value;
+            string value;
             while (true)
             {
                 Console.Write(prompt);
-                if (int.TryParse(Console.ReadLine(), out value) && value >= min && value <= max)
+                value = Console.ReadLine();
+                if (value.Length >= min && value.Length <= max)
                 {
                     return value;
                 }
-                Console.WriteLine($"Invalid input. Please enter a number between {min} and {max}.");
+                Console.WriteLine($"Invalid input. Please enter a string with {min} length and {max} length");
             }
         }
     }

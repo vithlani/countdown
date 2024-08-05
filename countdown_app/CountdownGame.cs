@@ -8,9 +8,6 @@ namespace countdown_app
 {
     public class CountdownGame
     {
-        private static readonly char[] Vowels = { 'A', 'E', 'I', 'O', 'U' };
-        private static readonly char[] Consonants = "BCDFGHJKLMNPQRSTVWXYZ".ToCharArray();
-        private static readonly Random Random = new Random();
         private SimpleDictionary Dictionary;
 
         public CountdownGame()
@@ -33,19 +30,6 @@ namespace countdown_app
                 Console.WriteLine($"Stack Trace: {ex.StackTrace}");
             }
         }
-
-        public string GenerateLetters(int vowelCount, int consonantCount)
-        {
-            var letters = new List<char>();
-            for (int i = 0; i < vowelCount; i++)
-                letters.Add(GetRandomVowel());
-            for (int i = 0; i < consonantCount; i++)
-                letters.Add(GetRandomConsonant());
-            return new string(letters.OrderBy(_ => Random.Next()).ToArray());
-        }
-
-        public char GetRandomVowel() => Vowels[Random.Next(Vowels.Length)];
-        public char GetRandomConsonant() => Consonants[Random.Next(Consonants.Length)];
 
         public string FindLongestWord(string letters)
         {
