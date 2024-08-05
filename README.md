@@ -1,4 +1,4 @@
-# Countdown
+# Countdown-app
 
 This repository involves a game of Countdown which consists of four rounds where vowels and consonants are generated automatically based on the length provided by the user in the input. After performing permutations and combinations, it returns the longest possible word that exists in the dictionary. Based on the word length, a score is assigned.
 
