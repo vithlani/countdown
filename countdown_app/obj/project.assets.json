@@ -1,0 +1,126 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "NetSpell/2.1.7": {
+        "type": "package",
+        "compile": {
+          "lib/NetSpell.SpellChecker.dll": {}
+        },
+        "runtime": {
+          "lib/NetSpell.SpellChecker.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NetSpell/2.1.7": {
+      "sha512": "aYgExP8R1uOXUCBlbvDTX/t9VL0SBRy/BiZRlf6V3ZTJNZpXBQD7ZmbBdI5PewUG4Bo6uF2KQKqIZyA0znfhJw==",
+      "type": "package",
+      "path": "netspell/2.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dic/de-DE.dic",
+        "dic/en-AU.dic",
+        "dic/en-CA.dic",
+        "dic/en-GB.dic",
+        "dic/en-US.dic",
+        "dic/es-ES.dic",
+        "dic/es-MX.dic",
+        "dic/fr-FR.dic",
+        "dic/it-IT.dic",
+        "lib/NetSpell.SpellChecker.dll",
+        "lib/NetSpell.SpellChecker.xml",
+        "netspell.2.1.7.nupkg.sha512",
+        "netspell.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "NetSpell >= 2.1.7"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\krupa\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\krupa\\source\\repos\\countdown_app\\countdown\\countdown_app\\countdown_app.csproj",
+      "projectName": "countdown_app",
+      "projectPath": "C:\\Users\\krupa\\source\\repos\\countdown_app\\countdown\\countdown_app\\countdown_app.csproj",
+      "packagesPath": "C:\\Users\\krupa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\krupa\\source\\repos\\countdown_app\\countdown\\countdown_app\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\krupa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "NetSpell": {
+            "target": "Package",
+            "version": "[2.1.7, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NetSpell 2.1.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NetSpell",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
