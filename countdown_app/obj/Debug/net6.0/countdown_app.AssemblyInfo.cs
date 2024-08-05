@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("countdown_app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8b6da91b578950cd4ed2c6e474d66f36601a9ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f44c99cd1c2d53c885b666e82bbf626c02b747d")]
 [assembly: System.Reflection.AssemblyProductAttribute("countdown_app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("countdown_app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

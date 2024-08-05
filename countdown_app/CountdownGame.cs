@@ -16,8 +16,6 @@ namespace countdown_app
         public CountdownGame()
         {
             string dictionaryPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "dic.txt");
-            Console.WriteLine($"Dictionary Path: {dictionaryPath}");
-            Console.WriteLine($"File exists: {File.Exists(dictionaryPath)}");
 
             if (!File.Exists(dictionaryPath))
             {

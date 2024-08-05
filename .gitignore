@@ -1,0 +1,18 @@
+# Ignore object files
+*.o
+*.obj
+
+# Ignore binary files
+*.exe
+*.dll
+*.bin
+
+# Ignore build directories
+bin/
+obj/
+
+# Ignore other common files
+*.log
+*.tmp
+*.swp
+*.vs
